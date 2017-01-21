@@ -11,6 +11,6 @@
     <property name="show_sql">true</property>
     <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
-     <mapping class="com.concretepage.Person"/>          
+<!--     <mapping class="com.concretepage.Person"/>           -->
    </session-factory>
 </hibernate-configuration>
