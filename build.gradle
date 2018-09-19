@@ -1,18 +1,30 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 archivesBaseName = 'Concretepage'
-version = '1.0-SNAPSHOT' 
+version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-   compile  'org.hibernate:hibernate-core:4.3.6.Final'
-   compile 'javax.servlet:javax.servlet-api:3.1.0'
-   compile 'org.slf4j:slf4j-simple:1.7.7'
-   compile 'org.javassist:javassist:3.15.0-GA'
-   compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.12'
+    //hibernate
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.3.6.Final'
+
+    //
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+    //logging
+    compile 'org.slf4j:slf4j-simple:1.7.7'
+    compile 'org.javassist:javassist:3.15.0-GA'
+    //database
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.12'
+
+    //Adding Spring Dependency
+    compile group: 'org.springframework', name: 'spring-core', version: '5.0.2.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '5.0.9.RELEASE'
+    compile group: 'org.springframework', name: 'spring-orm', version: '5.0.9.RELEASE'
+    compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.5.0'
+
 
 }
 
