@@ -14,3 +14,5 @@ docker run --name mySQL -e MYSQL_ROOT_PASSWORD=root -p 127.0.0.1:3306:3306 -p 12
 docker exec -it mySQL mysql -uroot -proot
 
 For SQL refer sqlFile.sql
+
+http://www.byteslounge.com/tutorials/spring-with-hibernate-persistence-and-transactions-example
