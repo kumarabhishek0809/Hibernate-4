@@ -11,5 +11,11 @@
       <user-name>root</user-name>
       <introspection-schemas>*:hibernate</introspection-schemas>
     </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="1713a84c-53a3-4338-85fa-003ba9d99b8e">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
   </component>
 </project>

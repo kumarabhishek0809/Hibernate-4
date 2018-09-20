@@ -3,7 +3,7 @@ package com.runner;
 import com.hibernate.domain.Address;
 import com.hibernate.domain.Department;
 import com.hibernate.domain.Employee;
-import com.hibernate.manager.EmployeeManager;
+import com.hibernate.manager.IDepartmentManager;
 import com.hibernate.manager.IEmployeeManager;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -33,6 +33,10 @@ public class SpringTransactionRunnerTest {
         department.setEmployee(employee);
         employeeManager.saveEmployee(employee);
 
+
+        IDepartmentManager departmentManager = (IDepartmentManager) ctx.getBean("departmentManager");
+        department.setDepartmentInfo("DepartmentInfoChanged");
+        departmentManager.saveDepartment(department);
 
     }
 }

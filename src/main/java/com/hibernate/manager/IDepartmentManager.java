@@ -1,9 +1,7 @@
-package com.hibernate.dao;
+package com.hibernate.manager;
 
 import com.hibernate.domain.Department;
 
-import java.util.Set;
-
-public interface DepartmentDAO {
+public interface IDepartmentManager {
     void saveDepartment(Department department);
 }
